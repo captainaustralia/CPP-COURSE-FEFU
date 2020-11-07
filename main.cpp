@@ -289,6 +289,14 @@ public:
             return pi / 2;
         else return -pi / 2;
     }
+    ComplexNumber POW(ComplexNumber val,int num){
+        ComplexNumber finally;
+        finally = val;
+        for (int i = 0; i <= num ; i++){
+            finally *= val;
+        }
+        return finally;
+    }
 
 };
 // READY FOR RATIONAL : ALL OVERLOAD/ ALL FOO
